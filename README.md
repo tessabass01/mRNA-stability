@@ -32,3 +32,6 @@ If we use a regressor, we can use L2 as our loss function. Possible plots showin
 Metrics to include:
 - MSE
 - Adjusted R squared
+
+
+Happy to be here!
