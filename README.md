@@ -9,7 +9,7 @@ We will need two types of data:
 
 ## Step 2: Embed UTRs using DNABERT-2
 
-In order to plot or predict anything using sequence data, we have to convert the sequence into something the computer will understand: numbers. DNABERT-2 is a foundational transformer that is trained to extract meaningful motifs and characteristics out of a DNA sequence and embed them in a way for the computer to retain the significance of the sequence when transforming it into numbers. It has been trained for other learning and predicting other motifs significant in epigenetics and for transcription factors binding.
+In order to plot or predict anything using sequence data, we have to convert the sequence into something the computer will understand: numbers. DNABERT-2 is a foundational transformer that is trained to extract meaningful motifs and characteristics out of a DNA sequence and embed them in a way for the computer to retain the significance of the sequence when transforming it into numbers. It has been trained to learn motifs significant in other areas of interest like epigenetics and transcription factor binding.
 
 Here is a link to the PDF if you want to give it a read: https://arxiv.org/pdf/2306.15006
 
