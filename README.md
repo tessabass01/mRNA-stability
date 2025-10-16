@@ -2,10 +2,11 @@
 
 ## Step 1: Gather, clean, and combine the data
 
-We will need two types of data:
+We will need three types of data:
  - mRNA half-lives from human gene transcripts
     - I found a dataset from [this paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02811-x#availability-of-data-and-materials) that came out in 2022!
- - Reference human cDNA / transcript FASTA file to extract UTRs
+ - Reference human cDNA / transcript FASTA file to extract UTRs (transcript FASTA from NCBI)
+ - Annotation file for knowing where the UTRs are in the sequence (GBFF or GFF3 from NCBI)
 
 ## Step 2: Embed UTRs using DNABERT-2
 
