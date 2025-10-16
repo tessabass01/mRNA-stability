@@ -21,7 +21,7 @@ Plotting the embeddings on a UMAP can help us visualize in a lower-dimensional s
 
 Based on the project, I think a regression model would be more fitting, but if there isn't as much predictive power as we want to see, we could also trying binning the half-lives and using a classifier. We can make an informed decision on which ML model to use once we have the UMAP results. Sci-kit learn has a lot of regressors that are easy to implement, so we will use sci-kit learn.
 
-## Step 5: Evaluate half-life predictions of unseen transcripts using a loss function
+## Step 5: Evaluate half-life predictions of unseen transcripts
 
 If we use a regressor, we can use L2 as our loss function. Possible plots showing model performance include:
 - predicted vs actual plot
