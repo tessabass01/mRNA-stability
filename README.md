@@ -11,6 +11,11 @@ We will need three types of data:
     - When you get to the link, press the blue `Download` button
     - Select `RefSeq only` and the `GBFF` file (Sequence and annotation)
 ![NCBI File Download Guide Screenshot](ncbi_file_download_instructions.png "NCBI File Download Configuration")
+    - Then, click the blue `Download` button again. After a few seconds, you will have a zip file called ncbi_dataset.zip
+    - Move the file into your desired directory and then double click to unzip it into a folder called `ncbi_dataset`
+    - Within the folder, the path to the data file we used is `ncbi_dataset/ncbi_dataset/data/GCF_000001405.40/genomic.gbff`
+    - This file serves as the input for the `pull_utr_regions.ipynb` script in the `scripts/` directory of this repository
+    - **Note:** This is a very large file (4.84 GB). You can download it and run the script to check for reproducibility from raw to processed data. However, you can skip this step and just use the preprocessed data included in the `processed_data/` directory of this repository to eliminate downloading such a large file onto your computer.
 
 
 ## Step 2: Embed UTRs using DNABERT-2
