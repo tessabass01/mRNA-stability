@@ -5,7 +5,13 @@
 We will need three types of data:
  - mRNA half-lives from human gene transcripts
     - I found a dataset from [this paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02811-x#availability-of-data-and-materials) that came out in 2022!
+    - Here is a link to the raw dataset from that paper: https://github.com/vagarwal87/saluki_paper/blob/main/Fig1_S1_S2/all_HLs_human.txt.gz 
  - Sequence and annotation file for knowing where the UTRs are in the sequence (GBFF from NCBI)
+    - You can download the file from this link: https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606/ 
+    - When you get to the link, press the blue `Download` button
+    - Select `RefSeq only` and the `GBFF` file (Sequence and annotation)
+![NCBI File Download Guide Screenshot](ncbi_file_download_instructions.png "NCBI File Download Configuration")
+
 
 ## Step 2: Embed UTRs using DNABERT-2
 
