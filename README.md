@@ -1,5 +1,75 @@
 # mRNA Stability Project
 
+## Step 0: Working with the large files in this repository requires GitLFS
+
+### Git LFS Instructions for Collaborators and Reproducibility
+
+This repository uses **Git Large File Storage (LFS)** for large files, such as `preprocessed_data/utrs.tsv`. To ensure you get the full content of these files, follow the steps below.
+
+#### 1. Install Git LFS
+
+**Mac (Homebrew):**
+
+```bash
+brew install git-lfs
+git lfs install
+```
+
+**Linux (Debian/Ubuntu):**
+
+```bash
+sudo apt-get install git-lfs
+git lfs install
+```
+
+**Windows:**
+Download and run the installer from [https://git-lfs.github.com](https://git-lfs.github.com).
+
+---
+
+#### 2. Clone the Repository
+
+```bash
+git clone https://github.com/tessabass01/mRNA-stability.git
+cd mRNA-stability
+```
+
+Git LFS automatically sets up the hooks for large files during the clone.
+
+---
+
+#### 3. Pull LFS-Tracked Files
+
+After cloning, fetch the real content for all LFS-tracked files:
+
+```bash
+git lfs pull
+```
+
+This replaces the pointer files with the actual large files in your working directory.
+
+---
+
+#### 4. Pull Updates in the Future
+
+When pulling changes from GitHub that include updates to LFS-tracked files:
+
+```bash
+git pull
+git lfs pull
+```
+
+> This ensures you always get the latest version of large files.
+
+---
+
+#### *Notes for Collaborators*
+
+* If a file looks like a pointer (small text file with `oid sha256`), you haven’t pulled the real content yet — run `git lfs pull`.
+* Only files tracked via LFS are affected; small files (scripts, metadata TSVs, etc.) work normally with Git.
+* If you cloned the repository before the recent cleanup, it is recommended to **re-clone** to avoid issues with rewritten history.
+
+
 ## Step 1: Gather, clean, and combine the data
 
 We used two types of data for this project:
