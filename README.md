@@ -1,6 +1,6 @@
 # mRNA Stability Project
 
-## Step 0: Working with the large files in this repository requires GitLFS
+## Step 0: Working with the large files in this repository requires Git LFS
 
 ### Git LFS Instructions for Collaborators and Reproducibility
 
