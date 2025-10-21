@@ -5,7 +5,7 @@ import hashlib
 file_path = "path/to/your/genomic.gbff"
 
 # extract UTRs and write to TSV
-with open('utrs.tsv', 'w') as out_f:
+with open('../preprocessed_data/utrs.tsv', 'w') as out_f:
     out_f.write("Gene\t5'UTR_length\t3'UTR_length\t5'UTR_sequence\t3'UTR_sequence\n")
 
     seen = set()  # to store hashes of unique gene + UTR combinations
