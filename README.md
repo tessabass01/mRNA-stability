@@ -67,7 +67,7 @@ git lfs pull
 
 * If a file looks like a pointer (small text file with `oid sha256`), you haven’t pulled the real content yet — run `git lfs pull`.
 * Only files tracked via LFS are affected; small files (scripts, metadata TSVs, etc.) work normally with Git.
-* If you cloned the repository before the recent cleanup, it is recommended to **re-clone** to avoid issues with rewritten history.
+* If you cloned the repository before the recent cleanup, you may need to **re-clone** to avoid issues with rewritten history.
 
 
 ## Step 1: Gather, clean, and combine the data
