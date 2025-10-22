@@ -72,6 +72,8 @@ git lfs pull
 
 ## Step 1: Gather, clean, and combine the data
 
+### Gather the data
+
 We used two types of data for this project:
  - mRNA half-lives from human transcripts
     - [This paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02811-x#availability-of-data-and-materials) that came out in 2022 has the human mRNA half-life dataset that we used. Here is a link to the raw dataset from that paper: https://github.com/vagarwal87/saluki_paper/blob/main/Fig1_S1_S2/all_HLs_human.txt.gz   
@@ -88,6 +90,15 @@ We used two types of data for this project:
     - **Note:** We could not include this file in our repository because this is a very large file (4.84 GB). You can download it and run the script to check for reproducibility from raw to processed data. However, if you want to eliminate downloading such a large file onto your computer, you can skip downloading this file and just use the preprocessed dataset found at `preprocessed_data/utrs.tsv` in this repository.
     - **Note:** If you run `extract_utrs.py` on the GBFF file to process the raw data, make sure to replace the `file_path` variable in `extract_utrs.py` to match the path to the GBFF file on your computer!!!
 
+### Clean the data
+
+ - **stuff here about how we combined or chose columns in `mRNA_half_life.csv` based on this paper (Andrew)**
+
+ - **other stuff here about cleaning up the data if necessary (Jacqui)**
+
+### Combine the data
+
+ - **stuff here about how we combined the datasets (Jacqui)**
 
 ## Step 2: Embed UTRs using DNABERT-2
 
@@ -95,9 +106,13 @@ In order to plot or predict anything using sequence data, we have to convert the
 
 Here is a link to the PDF if you want to give it a read: https://arxiv.org/pdf/2306.15006
 
+ - **stuff here about embedding & pooling with DNABERT-2 (Tessa)**
+
 ## Step 3: Plot UTR embeddings on a UMAP to see if they cluster by length of half-life
 
 Plotting the embeddings on a UMAP can help us visualize in a lower-dimensional space if there are meaningful clusters or any predictive power to our data. Based on what the UMAP looks like, we will be able to make more informed decisions about which ML models to use.
+
+ - **stuff here about plotting/coloring the UMAP (Tessa)**
 
 ## Step 4: Train different regression models on UTR embeddings
 
