@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 *.DS_Store
+=======
+*.DS_Storevenv/
+venv/
+.DS_Store
+>>>>>>> dc36d539c8e9536ea3e0247e5eb3117e01e95ba1
